@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Disallow: /disallowed
+
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.vertex-designs.com
+
+# Sitemaps
+Sitemap: https://www.vertex-designs.com/sitemap.xml

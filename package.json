@@ -6,7 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "check-types": "tsc --pretty --noEmit",
+    "check-format": "prettier --check .",
+    "check-lint": "eslint . --ext ts --ext tsx --ext js",
+    "format": "prettier --write .",
+    "test-all": "npm run check-format && npm run check-lint && npm run check-types && npm run build"
   },
   "dependencies": {
     "react": "^18",
@@ -34,5 +39,8 @@
     "prettier": "^2.8.8",
     "tailwindcss": "^3.3.2",
     "typescript": "^5.0.4"
+  },
+  "volta": {
+    "node": "18.20.3"
   }
 }
